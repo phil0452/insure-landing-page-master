@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='https://fonts.googleapis.com/css?family=DM+Serif+Display:400' rel='stylesheet'>	
+  <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet'>
+  <link href='CSS/styling.css' rel='stylesheet'>
+  <link href='CSS/styling-responsive.css' rel='stylesheet'>  
+  <title>Frontend Mentor | Insure landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+	<header>
+		<div class="content-container">
+			<img src="images/logo.svg" alt="logo" id="header-logo" />
+					
+			<nav>
+				<a href="#">How we work</a>
+				<a href="#">Blog</a>
+				<a href="#">Account</a>
+				<a href="#" id="plans" class="plans-desktop">View plans</a>
+			</nav>	
+			<img src="images/icon-hamburger.svg" alt="hamburger" id="hambuger" />
+			<img src="images/icon-close.svg" alt="hamburger" id="close" />			
+		</div>
+	</header>	
+	
+	<div id="slider-nav">
+		<nav>
+			<a href="#">How we work</a>
+			<a href="#">Blog</a>
+			<a href="#">Account</a>
+			<a href="#" id="plans-mobile">View plans</a>			
+		</nav>
+		
+		<img src="images/bg-pattern-mobile-nav.svg" alt="mobile-nav" />
+	</div>
+  
+	<img src="images/image-intro-mobile.jpg" alt="intro-mobile" id="intro-mobile" />
+	
+	<section id="mobile-first-section" class="mobile-centered purple-background-white-text">
+		<img src="images/bg-pattern-intro-left-mobile.svg" id="mobile-left-pattern" />
+		<h1>Humanizing <br />your insurance.</h1>
+		
+		<p class="content content-mobile">
+			Get your life insurance coverage easier and faster. We blend our expertise 
+			and technology to help you find the plan that’s right for you. Ensure you 
+			and your loved ones are protected.
+		</p>
+		
+		<a href="#" id="plans" class="links">View plans</a>
+		<img src="images/bg-pattern-intro-right-mobile.svg" id="mobile-right-pattern" />
+	</section>
+	
+	<section id="desktop-first-section" class="purple-background-white-text">
+		<br />
+		<br />
+		<!-- use pseudo elements to layer images? -->
+		<img src="images/bg-pattern-intro-left-desktop.svg" id="left-pattern" />
+		<div class="content-container">			
+			<div>
+				<hr />
+				<h1 class="heading">Humanizing <br />your insurance.</h1>
+				
+				<p class="content">
+					Get your life insurance coverage easier and faster. We blend our expertise 
+					and technology to help you find the plan that’s right for you. Ensure you 
+					and your loved ones are protected.
+				</p>
+				
+				<a href="#" id="plans" class="links">View plans</a>
+			</div>
+			<div>
+				<div id="picture">
+					<img src="images/image-intro-desktop.jpg" alt="intro-mobile" />
+				</div>
+			</div>
+		</div>	
+
+		<!-- use pseudo elements to layer images? -->
+		<img src="images/bg-pattern-intro-right-desktop.svg" id="right-pattern" />
+	</section>
+  
+	<div class="clearfix"></div>
+
+	<section id="qualities">
+		<div class="content-container">	
+			<hr />
+			<h1 class="heading heading-mobile">We’re different</h1>
+			
+			<div id="qualities-container">
+				<div class="quality">
+					<img src="images/icon-snappy-process.svg" id="mobile-left-pattern" />
+					
+					<h3>Snappy Process</h3>
+					<p class="content">
+						Our application process can be completed in minutes, not hours. Don’t get 
+						stuck filling in tedious forms.
+					</p>
+				</div>
+				<div class="quality">
+					<img src="images/icon-affordable-prices.svg" id="mobile-left-pattern" />
+					
+					<h3>Affordable Prices</h3>
+					<p class="content">
+						We don’t want you worrying about high monthly costs. Our prices may be low, 
+						but we still offer the best coverage possible.
+					</p>
+				</div>
+				<div class="quality">
+					<img src="images/icon-people-first.svg" id="mobile-left-pattern" />
+					
+					<h3>People First</h3>
+					<p class="content">
+						Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+						sure you’re covered when you need it.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="find-out-container" class="content-container">	
+		<div id="find-out-more" class="purple-background-white-text">
+			<div>
+				<h1>Find out more <br />about how we work</h1>
+				
+				<a href="#" id="plans" class="links">How we work</a>
+			</div>
+		
+			<img src="images/bg-pattern-how-we-work-desktop.svg" id="desktop-bg-pattern" />
+			<img src="images/bg-pattern-how-we-work-mobile.svg" id="mobile-bg-pattern" />
+		</div>
+		
+		
+	</div>
+
+	<footer>
+		<div class="content-container">	
+			<img src="images/bg-pattern-footer-mobile.svg" id="mobile-footer-bg-pattern" />
+			<img src="images/bg-pattern-footer-desktop.svg" id="desktop-footer-bg-pattern" />
+			
+			<div id="icon-flex-container">
+				<img src="images/logo.svg" alt="logo" id="footer-logo"/>
+				
+				<div id="social-media">
+					<div id="social-media-flex">
+						<a href="#"><img src="images/icon-facebook.svg" alt="facebook" id="facebook-logo" /></a>
+						<a href="#"><img src="images/icon-twitter.svg" alt="twitter" id="twitter-logo" /></a>
+						<a href="#"><img src="images/icon-pinterest.svg" alt="pinterest" id="pinterest-logo" /></a>
+						<a href="#"><img src="images/icon-instagram.svg" alt="instagram" id="instagram-logo" /></a>
+					</div>
+				</div>
+			</div>
+			
+			<hr />
+			<div id="dl-list-flex">
+				<dl>
+					<dt>Our company</dt>
+					<dd><a href="#">How we work</a></dd>
+					<dd><a href="#">Why Insure?</a></dd>
+					<dd><a href="#">View plans</a></dd>
+					<dd><a href="#">Reviews</a></dd>
+				</dl>
+			
+				<dl>
+					<dt>Help me</dt>
+					<dd><a href="#">FAQ</a></dd>
+					<dd><a href="#">Terms of use</a></dd>
+					<dd><a href="#">Privacy policy</a></dd>
+					<dd><a href="#">Cookies</a></dd>
+				</dl>
+				
+				<dl>
+					<dt>Contact</dt>
+					<dd><a href="#">Sales</a></dd>
+					<dd><a href="#">Support</a></dd>
+					<dd><a href="#">Live chat</a></dd>
+				</dl>
+				
+				<dl>
+					<dt>Others</dt>
+					<dd><a href="#">Careers</a></dd>
+					<dd><a href="#">Press</a></dd>
+					<dd><a href="#">Licenses</a></dd>
+				</dl>
+			</div>
+		</div>
+	</footer>
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="interactive.js"></script>
+</body>
+</html>
