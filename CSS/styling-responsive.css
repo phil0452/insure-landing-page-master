@@ -1,0 +1,217 @@
+@media screen and (min-width: 540px) {
+	img#intro-mobile {
+		height: 470px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	img#intro-mobile {
+		height: 580px;
+	}
+}
+@media screen and (min-width: 1100px) {
+	/* common styling */
+	.gray-text{
+		color: hsl(273, 4%, 51%);
+	}
+
+	.heading {
+		font-family: 'DM Serif Display';
+		font-size: 45px;
+		font-weight: 400;
+		line-height: 40px;
+		margin-bottom: 0;
+	}
+
+	/* header and navigation */
+	.content-container{
+		width: 1050px;
+		margin: auto;
+	}
+	
+	header .content-container img#hambuger,
+	header .content-container img#close	{
+		display: none;
+	}
+	
+	header .content-container nav{
+		display: flex;
+		font-size: 16px;
+		line-height: 23px;
+		padding-bottom: 10px;
+	}
+	
+	header .content-container nav a {
+		padding: 10px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: 700;	
+	}
+	
+	header .content-container nav a {
+		color: hsl(273, 4%, 51%);
+		transition: all 0.5s ease; /* allows for css effects on hover */
+	}
+	
+	/*change color on hover*/
+	header .content-container nav a:hover{
+		color:hsl(256, 26%, 20%);		
+	}
+	
+	header .content-container nav a:nth-child(3) {
+		margin-right: 20px;
+	}
+	
+	header .content-container nav a#plans{
+		border: 2px solid hsl(256, 26%, 20%);
+		color:hsl(256, 26%, 20%);
+		padding: 8px 30px;
+	}	
+
+	header .content-container nav a#plans:hover{
+		background-color:hsl(256, 26%, 20%);	
+		color: hsl(0, 0%, 98%);
+	}	
+	
+	/* hide mobile first section */
+	img#intro-mobile {
+		display: none;
+	}
+	
+	/* intro section */
+	section#mobile-first-section{
+		display: none;
+	}
+		
+	section#desktop-first-section{
+		position: relative;
+		display: block;
+	}
+	section#desktop-first-section .content-container {
+		display: flex;	
+		margin: auto;
+	}
+		
+	section .content-container hr{
+		width: 95px;
+		margin: 0;
+	}
+		
+	section#desktop-first-section .content-container #picture {
+		height: 330px;
+	}
+	section#desktop-first-section .content-container #picture img {
+		position: relative;
+		height: 440px;
+		width: 415px;
+	}
+	
+	section#desktop-first-section #left-pattern {
+		position: absolute;
+		top: 305px;
+		height: 316px;
+	}
+	
+	section#desktop-first-section #right-pattern {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 470px;
+		height: 380px;
+	}
+	
+	/* space separattor */
+	.clearfix{
+		height: 200px;
+	}
+
+	/* qualities section */
+	#qualities .content-container {
+		text-align: left; 
+	}
+	#qualities .content-container hr {		
+		margin: 0;
+	}
+	
+	#qualities .content-container #qualities-container {
+		display: flex;
+	}
+	
+	#qualities .content-container #qualities-container .quality{
+		flex: 1 1 30%;
+		padding: 10px 15px;
+	}
+	
+	/* find out message box */
+	#find-out-container img#mobile-bg-pattern {
+		display: none;
+	}
+
+	#find-out-container #find-out-more {
+		padding: 45px 50px;
+	}
+		
+	#find-out-container #find-out-more div {
+		display: flex;
+		justify-content: space-between;
+	}
+	#find-out-container #find-out-more h1{
+		text-align: left;
+		font-weight: 400;
+		line-height: 40px;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+	}
+	#find-out-container img#desktop-bg-pattern {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 170px;
+		width: 400px;
+	}
+	
+	#find-out-container #find-out-more a {
+		width: auto;
+		font-size: 16px;
+		position: relative;
+		z-index: 1;
+	}
+	
+	footer .content-container #icon-flex-container {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	footer .content-container #mobile-footer-bg-pattern{
+		display: none;
+	}
+	
+	footer .content-container #desktop-footer-bg-pattern{
+		position: absolute;
+		top: 0;
+		left: 0;	
+	}
+	footer #footer-logo{
+		padding-top: 0;
+		align-self: center;
+		margin: 0;
+	}
+	
+	footer .content-container #find-out-more hr,
+	footer .content-container #dl-list-flex{
+		position: relative;
+		z-index: 1;
+	}
+	
+	footer .content-container #dl-list-flex {
+		display: flex;
+		justify-content: space-between;
+		width: 850px;
+	}
+	
+	footer .content-container #dl-list-flex dl{
+		text-align: left;
+	}
+}

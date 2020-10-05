@@ -1,0 +1,285 @@
+html,
+body{
+	height: 100%;
+	margin: 0;
+}
+
+/* common styling */
+.mobile-centered{
+	padding: 55px 20px;
+	text-align: center;
+}
+
+.purple-background-white-text {	
+	background-color:hsl(256, 26%, 20%);
+	color: hsl(0, 0%, 98%);
+}
+
+.links{
+	transition: all 0.5s ease; /* allows for css effects on hover */
+}
+
+.links:hover{
+	background-color:hsl(0, 0%, 98%);	
+		color: hsl(256, 26%, 20%);
+}
+/* header and navigation */
+nav {
+	font-family: 'Karla';
+}
+.content-container {
+	padding: 25px 20px;
+    align-items: center;
+}
+
+header .content-container{
+    display: flex;
+    justify-content: space-between;
+}
+header .content-container img#header-logo {
+	width: 100px;
+}
+
+header .content-container img#hambuger,
+header .content-container img#close {
+	width: 25px;
+	float: right;
+}
+
+header .content-container img#close {
+	display: none;
+}
+
+header .content-container nav {
+	display: none;
+}
+
+#slider-nav {
+	background-color: hsl(270, 9%, 17%);
+	height: 100%;	
+	position: relative;
+}
+
+#slider-nav nav {
+	display: flex;
+	flex-direction: column;
+    font-weight: 400;
+	line-height: 20px;
+	text-transform: uppercase;
+	padding-top: 35px;
+}
+
+#slider-nav nav a {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	text-align: center;
+	color: hsl(0, 0%, 98%);
+	font-size: 18px;
+	width: 170px;
+	align-self: center;
+	transition: all 0.5s ease; /* allows for css effects on hover */
+}
+
+#slider-nav nav a:hover{
+	background-color:hsl(0, 0%, 98%);	
+		color: hsl(256, 26%, 20%);
+}
+#slider-nav nav a:nth-child(3) {
+	margin-bottom: 30px;
+}
+#slider-nav nav a#plans-mobile{
+	border: 2px solid hsl(0, 0%, 98%);
+	padding: 12px 20px;
+	margin-bottom: 35px;
+}
+
+#slider-nav img {
+    position: absolute;
+    bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 300px;
+}
+#slider-nav {
+	display: none;
+}
+
+/* mobile intro picture */
+img#intro-mobile {
+	height: 392px;
+    width: 100%;
+}
+
+/* intro section */
+section#mobile-first-section {
+	background-color:hsl(256, 26%, 20%);
+	margin-top: -5px;
+	padding: 55px 20px 105px 20px;
+	position: relative;
+}
+
+h1, h3 {
+	font-family: 'DM Serif Display';
+}
+
+.content{
+	font-family: 'Karla';
+    font-size: 16px;
+    line-height: 23px;
+    padding-bottom: 30px;	
+}
+
+section#mobile-first-section h1 {
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 40px;
+	position: relative;
+}
+section#mobile-first-section img#mobile-left-pattern {
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+#desktop-first-section {
+	display: none;
+}
+
+section#mobile-first-section #mobile-right-pattern {
+	position: absolute;
+    top: 340px;
+    right: 0;
+    height: 313px;
+}
+
+.links {
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	color: hsl(0, 0%, 98%);
+	font-family: 'Karla';
+	font-size: 18px;
+	width: 170px;
+	align-self: center;
+	transition: all 0.5s ease; /* allows for css effects on hover */
+	border: 2px solid hsl(0, 0%, 98%);
+	padding: 12px 20px;
+}
+
+/* space separattor */
+.clearfix{	
+	clear: both;
+	height: 70px;
+}
+
+/* qualities section */
+#qualities .content-container{
+	text-align: center;
+}
+
+#qualities .content-container hr{
+	width: 95px;
+    margin: auto;
+}
+
+#qualities .content-container h1 {
+	font-size: 46px;
+	padding-bottom: 30px;
+}
+#qualities .content-container #qualities-container .quality p {
+	color: hsl(273, 4%, 51%);
+}
+
+/* find out message box */
+#find-out-container {
+	text-align: center;
+}
+
+#find-out-container #find-out-more {
+	background-color: hsl(256, 26%, 20%);
+	padding: 62px 0 70px 0;		
+	position: relative;	
+}
+
+#find-out-container #find-out-more h1{
+	padding-bottom: 25px;
+	position: relative;	
+	z-index: 1;
+}
+
+#find-out-container img#mobile-bg-pattern {   
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#find-out-container img#desktop-bg-pattern {
+	display: none; 
+}
+
+footer {
+	background-color: hsl(0, 0%, 98%);
+	position: relative;
+}
+
+footer #mobile-footer-bg-pattern {
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+
+footer #desktop-footer-bg-pattern{
+	display: none;	
+}
+	
+footer #footer-logo{
+	margin: auto;
+	display: block;
+	position: relative;
+	padding-top: 65px;
+	z-index: 1;
+}
+
+footer #social-media {
+	display: block;
+	position: relative;
+}
+
+footer .content-container #icon-flex-container #social-media-flex{
+	display: flex;
+    justify-content: space-between;
+    width: 140px;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+footer .content-container dl {
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 12px;
+    text-transform: uppercase;	
+	font-weight: 700;
+	padding-top: 22px;
+}
+
+footer .content-container dl dt {
+	color: hsl(273, 4%, 51%);
+	padding-bottom: 25px;
+}
+footer .content-container dl dd {
+    margin: 0;
+	padding-bottom: 10px;
+}
+
+footer .content-container dl dd a{	
+	color: hsl(256, 26%, 20%);
+	text-decoration: none;
+}
+
+footer .content-container dl dd a:hover{
+	text-decoration: underline;
+}
